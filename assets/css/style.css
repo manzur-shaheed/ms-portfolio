@@ -80,6 +80,7 @@ section {
     background-size: cover;
 }
 
+/* one line text about me in the focal area */
 h2 {
     background-color: var(--fgcolor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -88,6 +89,7 @@ h2 {
     padding: 15px 20px;
     margin: 200px 70px 35px 0;
 }
+/* my picture */
 #me {
     margin-top: 20px;
     margin-left: 125px;
@@ -107,6 +109,7 @@ article {
     margin-bottom: 50px;
 }
 
+/* side headtings */
 aside {
     height: auto;
     width: 25%;
@@ -118,20 +121,23 @@ aside {
     border-right: var(--txtcolor) solid 8px;
 }
 
+/* contents for each section  */
 .content {
-    width: 75%;
+    width: 100%;
     margin: 10px 20px 20px 0;
     padding-left: 20px;
     padding-right: 50px;
     justify-content: center;
 }
 
+/* remove underline */
 .content a {
     text-decoration: none;
 }
 
+/* list of works - completed work is in one row */
 #work1 {
-    width: 75%;
+    width: 100%;
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -139,14 +145,18 @@ aside {
     display: inline-flex;
 }
 
+/* under construction and coming soon works are sharing the same row */
 #work2, #work3 {
-    width: 37%;
-    height: 200px;
-    background-size: cover;
+    width: 45%;
+    height: 400px;
+    margin: 0 0 20px 20px;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     display: inline-flex;
 }
 
+/* work images */
 #work1 {
     background-image: url(../images/ms_accessibility_enhancement.png);
 }
@@ -159,32 +169,51 @@ aside {
     background-image: url(../images/under_construction.png);
 }
 
+/* mouse hove in work section */
 #work1:hover {
-    width: 80%;
-    height: 800px;
+    width: 105%;
+    height: 650px; 
     transition: 0.5s;
 }
 
 #work2:hover, #work3:hover {
-    width: 40%;
-    height: 250px;
+    width: 47%;
+    height: 450px;
     transition: 0.5s;
 }
 
-#contacts {
+/* contacts section */
+.contact-content {
     display: flex;
-    font-size: 1em;
+    width: 100%;
+    margin: 10px 20px 20px 0;
+    padding-left: 20px;
+    padding-right: 50px;
+    justify-content: center;
 }
-#contacts a {
+
+.contact-text {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
     color: var(--txtcolor);
-    padding-right: 20px;
+    text-decoration: none;
+}
+
+/* images in the contact section - cell, email and git */
+/* had to adjust their width as the icons have different sizes */
+/* orginal sizes: cell.png - 280x280, email.png - 512x512, github.png - 560x560 */
+
+
+#cell, #email, #git {
+    padding: 20px;
 }
 
 /* media queries */
 /* tablet */
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
-    header, article {
+    header, article, .contact-content {
         flex-direction: column;
     }
     h1 {
