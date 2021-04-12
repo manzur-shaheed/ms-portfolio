@@ -109,7 +109,7 @@ article {
     margin-bottom: 50px;
 }
 
-/* side headtings */
+/* side headings */
 aside {
     height: auto;
     width: 25%;
@@ -225,6 +225,9 @@ aside {
     a {
         font-size: 20px;
     }
+    article {
+        margin: 0 auto;
+    }
     aside {
         margin: 10px auto;
         text-align: center;
@@ -250,8 +253,8 @@ aside {
         height: 300px;
         width: 100%;
     }
-    #work1, #work2 {
-        width: 50%;
+    #work2, #work3 {
+        height: 200px;
     }
 }
 /* phones */
