@@ -13,6 +13,7 @@ You can copy it from my github pages by cloning [github link](git@github.com:man
 ## Deployment
 
 The following image shows the web application's appearance and functionality:
+
 Desktop View:
 
 ![MS Portfolio page](./assets/images/ms-portfolio.png)
