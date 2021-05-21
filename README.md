@@ -16,7 +16,7 @@ The following image shows the web application's appearance and functionality:
 
 Desktop View:
 
-![MS Portfolio page](./assets/images/ms-portfolio.png)
+![MS Portfolio page](./assets/images/ms-profile.png)
 
 Mobile View:
 
